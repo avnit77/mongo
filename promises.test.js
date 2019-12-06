@@ -5,6 +5,6 @@ describe('futurama api', () => {
     return getQuotes()
       .then(quotes => {
         expect(quotes).toHaveLength(20);
-      })
+      });
   });
 });

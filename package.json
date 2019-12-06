@@ -7,7 +7,6 @@
     "test": "jest --verbose",
     "test:watch": "npm run test -- --watchAll --coverage",
     "lint": "eslint '**/*.js'"
-
   },
   "jest": {
     "testEnvironment": "node"

@@ -40,7 +40,7 @@ describe('file system functions', () => {
           age: 5,
           weight: '20 lbs'
         }));
-      })
+      });
   });
 
   it('readJSON', () => {
