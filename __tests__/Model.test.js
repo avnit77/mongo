@@ -27,7 +27,7 @@ describe('Model', () => {
     return Dog.init()
       .then(() => {
         expect(fsFunc.mkdirp).toHaveBeenCalledWith('./Dog');
-      })
+      });
   });
 
   it('creates a new dog', () => {
@@ -49,13 +49,6 @@ describe('Model', () => {
     return Dog.init()
       .then(() => {
         return Dog.create({
-          name: 'spot',
-          age: 5,
-          weight: '20 lbs'
-        });
-      })
-      .then(() => {
-        expect(fsFunc.writeJSON).toHaveBeenCalledWith('./Dog/randomID', {
           name: 'spot',
           age: 5,
           weight: '20 lbs'
